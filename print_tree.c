@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.h                                             :+:      :+:    :+:   */
+/*   print_tree.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aboukdid <aboukdid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/06 12:10:41 by aboukdid          #+#    #+#             */
-/*   Updated: 2024/03/06 16:32:19 by aboukdid         ###   ########.fr       */
+/*   Created: 2024/03/06 16:36:06 by aboukdid          #+#    #+#             */
+/*   Updated: 2024/03/06 16:36:28 by aboukdid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TEST_H
-# define TEST_H
+#include "test.h"
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <stdbool.h>
-
-typedef struct s_tree
+void	*print_tree(t_tree *root)
 {
-	int				value;
-	struct s_tree	*left;
-	struct s_tree	*right;
-}					t_tree;
-void	*print_tree(t_tree *root);
-t_tree	*tree_creat(int value);
-#endif
+	if (!root)
+		return (printf("-----<empty>----\n"), NULL);
+	printf("the value is: %d\n", root->value);
+	printf("left\n");
+	print_tree(root->left);
+	printf("right\n");
+	print_tree(root->right);
+	printf("done\n");
+	return (NULL);
+}
