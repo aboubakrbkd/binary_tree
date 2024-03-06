@@ -6,7 +6,7 @@
 /*   By: aboukdid <aboukdid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 12:10:41 by aboukdid          #+#    #+#             */
-/*   Updated: 2024/03/06 16:52:53 by aboukdid         ###   ########.fr       */
+/*   Updated: 2024/03/06 18:46:28 by aboukdid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,6 @@ typedef struct s_tree
 void	*print_tree(t_tree *root);
 t_tree	*tree_creat(int value);
 int		tree_size(t_tree *root);
+int find_min_value(t_tree *root);
+t_tree	*insert_tree(t_tree **result, int data);
 #endif
