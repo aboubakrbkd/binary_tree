@@ -6,11 +6,12 @@
 /*   By: aboukdid <aboukdid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 11:36:35 by aboukdid          #+#    #+#             */
-/*   Updated: 2024/03/07 14:07:33 by aboukdid         ###   ########.fr       */
+/*   Updated: 2024/03/07 14:29:17 by aboukdid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "test.h"
+
 
 t_tree *searchBST(t_tree *root, int val)
 {
