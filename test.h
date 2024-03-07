@@ -6,7 +6,7 @@
 /*   By: aboukdid <aboukdid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 12:10:41 by aboukdid          #+#    #+#             */
-/*   Updated: 2024/03/06 18:46:28 by aboukdid         ###   ########.fr       */
+/*   Updated: 2024/03/07 11:56:22 by aboukdid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <stdbool.h>
+#include <math.h>
 
 typedef struct s_tree
 {
